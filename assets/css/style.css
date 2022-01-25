@@ -269,7 +269,7 @@ li>.nav-link:hover:before {
 
   /* ========= Section Hero ========= */
   .flex__hero {
-    height: 92vh;
+    height: 93vh;
     background-color: violet;
     gap: 7vw;
   }
