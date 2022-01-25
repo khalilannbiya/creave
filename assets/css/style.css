@@ -214,7 +214,7 @@ li>.nav-link:hover:before {
     justify-content: center;
     flex-direction: column-reverse;
     height: 95vh;
-    background-color: violet;
+    background-color: var(--primary-color);
     gap: 7vw;
   }
 
@@ -270,7 +270,6 @@ li>.nav-link:hover:before {
   /* ========= Section Hero ========= */
   .flex__hero {
     height: 93vh;
-    background-color: violet;
     gap: 7vw;
   }
 
