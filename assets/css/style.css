@@ -130,7 +130,7 @@ li>.nav-link:hover:before {
 .flex__hero {
   display: flex;
   justify-content: space-between;
-  padding: 0 5vw;
+  padding: 0 10vw;
   align-items: center;
   height: 86vh;
   background-color: var(--primary-color);
@@ -144,12 +144,13 @@ li>.nav-link:hover:before {
 
 .typography p {
   font-size: 1.4vw;
-  line-height: 1.4;
+  margin-top: 1.5vw;
+  line-height: 1.7;
   font-weight: 500;
 }
 
 .wrapper-images img {
-  width: 35vw;
+  width: 30vw;
 }
 
 
@@ -166,6 +167,10 @@ li>.nav-link:hover:before {
     padding: 0 10vw;
   }
 
+  .navbar-brand img {
+    width: 14vw;
+  }
+
   .navbar-expand-lg .navbar-nav {
     margin-top: 2.5vw;
   }
@@ -180,7 +185,7 @@ li>.nav-link:hover:before {
 
   .container-fluid .navbar-toggler {
     padding: 0;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: 600;
     background-color: var(--primary-color);
     border: none;
@@ -213,6 +218,7 @@ li>.nav-link:hover:before {
   .flex__hero {
     justify-content: center;
     flex-direction: column-reverse;
+    padding: 0 5vw;
     height: 95vh;
     background-color: var(--primary-color);
     gap: 7vw;
@@ -280,7 +286,7 @@ li>.nav-link:hover:before {
   .typography h2 {
     font-size: 5.5vw;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .typography p {
