@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
 :root {
@@ -136,23 +136,119 @@ li>.nav-link:hover:before {
   background-color: var(--primary-color);
 }
 
-.typography h2 {
+.typography__hero h2 {
   font-size: 3.5vw;
   line-height: 1.4;
   font-weight: bold;
+  color: var(--font-color-primary);
 }
 
-.typography p {
+.typography__hero p {
   font-size: 1.4vw;
   margin-top: 1.5vw;
   line-height: 1.7;
   font-weight: 500;
+  color: var(--font-color-primary);
 }
 
 .wrapper-images img {
   width: 30vw;
 }
 
+/* ========= Section About ========= */
+
+#about {
+  padding-top: 3vw;
+  margin-bottom: 200px;
+}
+
+.header__about h2 {
+  font-size: 3.2vw;
+  font-weight: 800;
+  color: var(--font-color-primary);
+}
+
+.flex__about {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10vw;
+  gap: 8vw;
+  align-items: center;
+  margin-top: 10vw;
+}
+
+.wrapper--img__about {
+  width: 33vw;
+  height: 31vw;
+  border: 3px solid #1883FF;
+  border-radius: 7vw .7vw 7vw .7vw;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper--img__about img {
+  width: 33vw;
+  border-radius: 7vw .7vw 7vw .7vw;
+  position: absolute;
+  top: -1.5vw;
+  right: -1.5vw;
+}
+
+.box-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  height: 7vw;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  border-radius: 1.5vw;
+}
+
+.box-team__right {
+  top: -5vw;
+  right: -6vw;
+}
+
+.box-team__left {
+  top: 27vw;
+  left: -3vw;
+}
+
+.box-team h4 {
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: var(--font-color-secondary);
+}
+
+.box-team p {
+  font-size: 1vw;
+  color: var(--font-color-primary);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.typography__about h3 {
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: var(--font-color-primary);
+  line-height: 1.4;
+}
+
+.typography__about p {
+  margin-top: 1vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  color: var(--font-color-secondary);
+  line-height: 1.4;
+  padding-right: 8vw;
+}
+
+.typography__about p span {
+  color: var(--tertiary-color);
+}
 
 
 /* ========= Ipad Device ========= */
@@ -228,14 +324,14 @@ li>.nav-link:hover:before {
     width: 60vw;
   }
 
-  .typography h2 {
+  .typography__hero h2 {
     font-size: 5vw;
     text-align: center;
     line-height: 1.4;
     font-weight: bold;
   }
 
-  .typography p {
+  .typography__hero p {
     font-size: 2vw;
     text-align: center;
     line-height: 1.5;
@@ -283,13 +379,13 @@ li>.nav-link:hover:before {
     width: 70vw;
   }
 
-  .typography h2 {
+  .typography__hero h2 {
     font-size: 5.5vw;
     text-align: center;
     line-height: 1.4;
   }
 
-  .typography p {
+  .typography__hero p {
     font-size: 2.5vw;
     text-align: center;
     line-height: 1.5;
