@@ -473,7 +473,7 @@ li>.nav-link:hover:before {
   }
 
   .typography__hero h2 {
-    font-size: 5.5vw;
+    font-size: 6.5vw;
     text-align: center;
     line-height: 1.4;
   }
@@ -485,9 +485,12 @@ li>.nav-link:hover:before {
   }
 
   /* ========= Section About ========= */
+  #about {
+    height: 160vw;
+  }
 
   .header__about h2 {
-    font-size: 5.5vw;
+    font-size: 6.5vw;
   }
 
   .header__about h2::after {
@@ -500,12 +503,65 @@ li>.nav-link:hover:before {
     background-color: var(--aksen-kecil);
   }
 
+  .flex__about {
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+    align-items: center;
+    margin-top: 20vw;
+  }
+
+  .wrapper--img__about {
+    width: 58vw;
+    height: 53vw;
+    border-radius: 13vw 1.2vw 13vw 1.2vw;
+  }
+
+  .wrapper--img__about img {
+    border-radius: 13vw 1.2vw 13vw 1.2vw;
+    width: 58.5vw;
+    top: -5vw;
+    right: -4vw;
+  }
+
+  .box-team {
+    width: 22vw;
+    height: 9vw;
+    border-radius: 2vw;
+  }
+
+  .box-team {
+    width: 27vw;
+    height: 11vw;
+    border-radius: 2vw;
+  }
+
+  .box-team__right {
+    top: -9vw;
+    right: -9vw;
+  }
+
+  .box-team__left {
+    top: 45vw;
+    left: -6vw;
+  }
+
+  .box-team h4 {
+    font-size: 1.8vw;
+  }
+
+  .box-team p {
+    font-size: 1.6vw;
+  }
+
   .typography__about h3 {
-    font-size: 5.5vw;
+    font-size: 6.5vw;
+    padding: 0;
   }
 
   .typography__about p {
-    font-size: 2.2vw;
+    margin-top: 5vw;
+    font-size: 2.3vw;
     line-height: 1.5;
     padding-right: 0;
   }
