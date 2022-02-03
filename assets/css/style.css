@@ -136,7 +136,7 @@ li>.nav-link:hover:before {
   justify-content: space-between;
   padding: 0 10vw;
   align-items: center;
-  height: 86vh;
+  height: 88vh;
   background-color: var(--primary-color);
 }
 
@@ -161,18 +161,18 @@ li>.nav-link:hover:before {
 
 /* ========= Section About ========= */
 
-#about {
-  padding-top: 9vw;
+#about, #ourteam {
+  padding-top: 10vw;
   height: 65vw;
 }
 
-.header__about h2 {
+.header__about h2, .header__ourteam h2 {
   font-size: 3.2vw;
   font-weight: 800;
   color: var(--font-color-primary);
 }
 
-.header__about h2::after {
+.header__about h2::after, .header__ourteam h2::after {
   content: "";
   display: inline-block;
   width: 9px;
@@ -205,7 +205,7 @@ li>.nav-link:hover:before {
   border-radius: 7vw .7vw 7vw .7vw;
   position: absolute;
   top: -1vw;
-  right: -1vw;
+  right: -1.5vw;
 }
 
 .box-team {
@@ -264,6 +264,48 @@ li>.nav-link:hover:before {
   color: var(--tertiary-color);
 }
 
+/* ========= Section Ourteam ========= */
+.swiper {
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+
+.swiper-slide {
+  width: auto;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  gap: 2vw;
+  border-radius: 1vw;
+}
+
+.typography__swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typography__swiper h2 {
+  color: var(--font-color-primary);
+  font-weight: 800;
+  font-size: 1vw;
+
+}
+
+.typography__swiper h3 {
+  color: var(--tertiary-color);
+  font-weight: 800;
+  font-size: 0.9vw;
+
+}
+
+.swiper-slide img {
+  width: 45%;
+}
 
 /* ========= Ipad Device ========= */
 @media only screen and (max-width:991px) {
@@ -361,7 +403,7 @@ li>.nav-link:hover:before {
     height: 120vw;
   }
 
-  .header__about h2 {
+  .header__about h2, .header__ourteam h2 {
     font-size: 5vw;
   }
 
@@ -489,11 +531,11 @@ li>.nav-link:hover:before {
     height: 185vw;
   }
 
-  .header__about h2 {
+  .header__about h2, .header__ourteam h2 {
     font-size: 6.5vw;
   }
 
-  .header__about h2::after {
+  .header__about h2::after, .header__ourteam h2 {
     content: "";
     display: inline-block;
     width: 1.7vw;
