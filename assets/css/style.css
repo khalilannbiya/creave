@@ -268,7 +268,7 @@ li>.nav-link:hover:before {
 .swiper {
   width: 100%;
   height: auto;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .swiper-slide {
@@ -281,6 +281,16 @@ li>.nav-link:hover:before {
   background-color: var(--secondary-color);
   gap: 2vw;
   border-radius: 1vw;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: var(--aksen-kecil);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--tertiary-color);
 }
 
 .typography__swiper {
@@ -399,7 +409,7 @@ li>.nav-link:hover:before {
 
   /* ========= Section About ========= */
 
-  #about {
+  #about, #ourteam {
     height: 120vw;
   }
 
@@ -465,6 +475,26 @@ li>.nav-link:hover:before {
     font-size: 1.8vw;
     line-height: 1.5;
     padding-right: 0;
+  }
+
+  /* ========= Section Ouerteam ========= */
+  .swiper {
+    margin-top: 4rem;
+  }
+
+  .swiper-slide {
+    height: 50vw;
+    gap: 2vw;
+    border-radius: 2vw;
+  }
+
+  .typography__swiper h2 {
+    font-size: 2vw;
+  }
+
+  .typography__swiper h3 {
+    font-size: 1.6vw;
+
   }
 }
 
@@ -535,7 +565,7 @@ li>.nav-link:hover:before {
     font-size: 6.5vw;
   }
 
-  .header__about h2::after, .header__ourteam h2 {
+  .header__about h2::after, .header__ourteam h2::after {
     content: "";
     display: inline-block;
     width: 1.7vw;
@@ -606,6 +636,22 @@ li>.nav-link:hover:before {
     font-size: 2.3vw;
     line-height: 1.5;
     padding-right: 0;
+  }
+
+  /* ========= Section Ourteam ========= */
+  .swiper-slide {
+    height: 70vw;
+    gap: 3vw;
+    border-radius: 2vw;
+  }
+
+  .typography__swiper h2 {
+    font-size: 2.5vw;
+  }
+
+  .typography__swiper h3 {
+    font-size: 2vw;
+
   }
 
 }
