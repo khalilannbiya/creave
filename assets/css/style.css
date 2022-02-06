@@ -244,14 +244,16 @@ li > .nav-link:hover:before {
 
 #about,
 #ourteam,
-#ourportfolio {
+#ourportfolio,
+#ourservices {
   padding-top: 10vw;
   height: 65vw;
 }
 
 .header__about h2,
 .header__ourteam h2,
-.header__ourportfolio h2 {
+.header__ourportfolio h2,
+.header__ourservices h2 {
   font-size: 3.2vw;
   font-weight: 800;
   color: var(--font-color-primary);
@@ -259,7 +261,8 @@ li > .nav-link:hover:before {
 
 .header__about h2::after,
 .header__ourteam h2::after,
-.header__ourportfolio h2::after {
+.header__ourportfolio h2::after,
+.header__ourservices h2::after {
   content: "";
   display: inline-block;
   width: 9px;
@@ -570,6 +573,65 @@ li > .nav-link:hover:before {
   transform-origin: bottom left;
 }
 
+/* ========= Our Services ========== */
+#ourservices {
+  margin-top: 30vw;
+  padding-top: 20vw;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.header__ourservices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__ourservices p {
+  font-size: 1.3vw;
+  margin-top: 2vw;
+  text-align: center;
+  color: var(--font-color-secondary);
+}
+
+#ourservices .list__ourservices {
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__ourservices .inner__services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin: 0 3vw 5vw 3vw;
+  padding: 1.4vw 2vw 1vw 2vw;
+  border-radius: 1vw;
+  transition: all 0.3s ease;
+}
+
+.list__ourservices .inner__services:hover {
+  box-shadow: 0px 32px 42px -14px rgba(0, 0, 0, 0.4);
+}
+
+.inner__services h4 {
+  font-size: 1.5vw;
+  margin-right: 2vw;
+  font-weight: 600;
+}
+
+.inner__services i {
+  margin-top: -0.5vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
 /* ========= Ipad Device ========= */
 @media only screen and (max-width: 991px) {
   .navbar {
@@ -663,12 +725,15 @@ li > .nav-link:hover:before {
   /* ========= Section About ========= */
 
   #about,
-  #ourteam {
+  #ourteam,
+  #ourportfolio {
     height: 120vw;
   }
 
   .header__about h2,
-  .header__ourteam h2 {
+  .header__ourteam h2,
+  .header__ourportfolio h2,
+  .header__ourservices h2 {
     font-size: 5vw;
   }
 
@@ -818,6 +883,31 @@ li > .nav-link:hover:before {
     transform: translateX(-8px);
     transition: all 0.3s ease;
   }
+
+  /* ========= Our Services ========= */
+  #ourservices {
+    margin-top: 0;
+  }
+
+  .header__ourservices p {
+    font-size: 2vw;
+  }
+
+  .list__ourservices .inner__services {
+    width: 30vw;
+    height: 7vw;
+    padding: 1.5vw 3vw 0.5vw 3vw;
+    margin-bottom: 7vw;
+  }
+
+  .list__ourservices .inner__services:hover {
+    box-shadow: 0px 20px 42px -14px rgba(0, 0, 0, 0.4);
+  }
+
+  .inner__services h4,
+  .inner__services i {
+    font-size: 1.9vw;
+  }
 }
 
 /* ========= Tab Device ========= */
@@ -887,12 +977,15 @@ li > .nav-link:hover:before {
 
   .header__about h2,
   .header__ourteam h2,
-  .header__ourportfolio h2 {
+  .header__ourportfolio h2,
+  .header__ourservices h2 {
     font-size: 6.5vw;
   }
 
   .header__about h2::after,
-  .header__ourteam h2::after {
+  .header__ourteam h2::after,
+  .header__ourportfolio h2::after,
+  .header__ourservices h2::after {
     content: "";
     display: inline-block;
     width: 1.7vw;
@@ -1000,11 +1093,12 @@ li > .nav-link:hover:before {
 
   /* ========= Section Our Portfolio ======== */
   #ourportfolio {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 260vw;
+    margin-top: 50vw;
+    padding-top: 20vw;
+    height: 150vh;
   }
 
   .header__ourportfolio p {
@@ -1076,5 +1170,43 @@ li > .nav-link:hover:before {
 
   .btn__portfolio .cta svg {
     width: 4vw;
+  }
+
+  /* ======= Our Services =========== */
+  #ourservices {
+    margin-top: 200vw;
+    padding-top: 20vw;
+  }
+
+  .header__ourservices p {
+    font-size: 2.3vw;
+  }
+
+  #ourservices .list__ourservices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .list__ourservices .inner__services {
+    width: 60vw;
+    height: 13vw;
+    border-radius: 2vw;
+    margin-bottom: 10vw;
+    padding: 2.4vw 3vw 0.5vw 3vw;
+  }
+
+  .list__ourservices .inner__services:hover {
+    box-shadow: 0px 20px 42px -14px rgba(0, 0, 0, 0.4);
+  }
+
+  .inner__services h4 {
+    font-size: 4vw;
+  }
+
+  .inner__services i {
+    margin-top: -1.5vw;
+    font-size: 4vw;
   }
 }
