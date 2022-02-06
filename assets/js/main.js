@@ -53,3 +53,28 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Filter Our Portfolio
+let list = document.querySelectorAll(".list");
+let itemPortfolio = document.querySelectorAll(".item__portfolio");
+
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener("click", function () {
+    for (let j = 0; j < list.length; j++) {
+      list[j].classList.remove("active");
+    }
+    this.classList.add("active");
+
+    let dataFilter = this.getAttribute("data-filter");
+
+    for (let k = 0; k < itemPortfolio.length; k++) {
+      itemPortfolio[k].classList.remove("active");
+      itemPortfolio[k].classList.add("hide");
+
+      if (itemPortfolio[k].getAttribute("data-item") == dataFilter || dataFilter == "all") {
+        itemPortfolio[k].classList.remove("hide");
+        itemPortfolio[k].classList.add("active");
+      }
+    }
+  });
+}

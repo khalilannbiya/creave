@@ -243,20 +243,23 @@ li > .nav-link:hover:before {
 /* ========= Section About ========= */
 
 #about,
-#ourteam {
+#ourteam,
+#ourportfolio {
   padding-top: 10vw;
   height: 65vw;
 }
 
 .header__about h2,
-.header__ourteam h2 {
+.header__ourteam h2,
+.header__ourportfolio h2 {
   font-size: 3.2vw;
   font-weight: 800;
   color: var(--font-color-primary);
 }
 
 .header__about h2::after,
-.header__ourteam h2::after {
+.header__ourteam h2::after,
+.header__ourportfolio h2::after {
   content: "";
   display: inline-block;
   width: 9px;
@@ -407,6 +410,164 @@ li > .nav-link:hover:before {
 .swiper-slide img {
   width: 10vw;
   height: 16vw;
+}
+
+/* ========= Section OurPortfolio ============ */
+#ourportfolio {
+  margin-top: 3vw;
+}
+.header__ourportfolio p {
+  font-size: 1.3vw;
+  margin-top: 2vw;
+  color: var(--font-color-secondary);
+}
+
+.categories__portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4vw;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.categories__portfolio ul li {
+  list-style: none;
+  background-color: var(--font-color-secondary);
+  display: inline-flex;
+  margin-right: 1vw;
+  padding: 0.5vw 1.5vw;
+  border-radius: 1vw;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.categories__portfolio ul li.active {
+  background-color: var(--tertiary-color);
+  color: #fff;
+}
+
+.portfolios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vw;
+  flex-wrap: wrap;
+}
+
+.portfolios .item__portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  padding-bottom: 1vw;
+  margin: 0 2vw 5vw 2vw;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.portfolios .item__portfolio.hide {
+  display: none;
+}
+
+.portfolios .item__portfolio:hover {
+  border-radius: 0px;
+  background: var(--primary-color);
+  box-shadow: 8px 8px 18px #c7c7c7, -8px -8px 18px #c7c7c7;
+}
+
+.item__portfolio .image__portfolio {
+  background-color: var(--secondary-color);
+  padding: 2vw 5vw;
+}
+
+.image__portfolio img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.item__portfolio .typography__portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1vw;
+  width: 31vw;
+  padding: 0 1vw;
+}
+
+.typography__title h3 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-top: 0.8vw;
+  margin-right: auto;
+}
+
+.typography__title p {
+  color: var(--font-color-secondary);
+  font-size: 1vw;
+}
+
+.typography__portfolio .btn__portfolio {
+  margin-top: -3.2vw;
+}
+
+.btn__portfolio .cta {
+  border: none;
+  background: none;
+}
+
+.btn__portfolio .cta span {
+  padding-bottom: 7px;
+  letter-spacing: 1px;
+  font-size: 0.8vw;
+  padding-right: 15px;
+}
+
+.btn__portfolio .cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.btn__portfolio .cta:hover svg {
+  transform: translateX(0);
+}
+
+.btn__portfolio .cta:active svg {
+  transform: scale(0.9);
+}
+
+/* .typography__country {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+} */
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.typography__portfolio .cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ========= Ipad Device ========= */
@@ -599,6 +760,64 @@ li > .nav-link:hover:before {
   .typography__swiper h3 {
     font-size: 1.6vw;
   }
+
+  /* ========= Section Our Portfolio ========= */
+  #ourportfolio {
+    margin-top: -18vw;
+  }
+
+  .header__ourportfolio h2 {
+    font-size: 5vw;
+  }
+
+  .header__ourportfolio p {
+    font-size: 2vw;
+  }
+
+  .categories__portfolio ul li {
+    font-size: 1.5vw;
+  }
+
+  .portfolios .item__portfolio {
+    width: 36vw;
+    height: 30vw;
+    margin: 0 5vw 7vw 5vw;
+  }
+
+  .item__portfolio .image__portfolio {
+    padding: 2.9vw 8vw;
+  }
+
+  .image__portfolio img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .typography__title p {
+    font-size: 1.2vw;
+  }
+
+  .item__portfolio .typography__portfolio {
+    padding: 0 0 2.5vw 0;
+  }
+
+  .typography__portfolio .btn__portfolio {
+    margin-top: -5vw;
+  }
+
+  .btn__portfolio .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    padding-right: 15px;
+  }
+
+  .btn__portfolio .cta svg {
+    width: 2.5vw;
+    margin-top: 0.4vw;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
 }
 
 /* ========= Tab Device ========= */
@@ -667,7 +886,8 @@ li > .nav-link:hover:before {
   }
 
   .header__about h2,
-  .header__ourteam h2 {
+  .header__ourteam h2,
+  .header__ourportfolio h2 {
     font-size: 6.5vw;
   }
 
@@ -746,6 +966,10 @@ li > .nav-link:hover:before {
   }
 
   /* ========= Section Ourteam ========= */
+  #ourteam {
+    padding-top: 20vw;
+  }
+
   .header__ourteam p {
     font-size: 2.3vw;
   }
@@ -772,5 +996,85 @@ li > .nav-link:hover:before {
 
   .typography__swiper h3 {
     font-size: 2vw;
+  }
+
+  /* ========= Section Our Portfolio ======== */
+  #ourportfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 260vw;
+  }
+
+  .header__ourportfolio p {
+    font-size: 2.3vw;
+  }
+
+  .categories__portfolio ul {
+    padding: 0 5vw;
+  }
+
+  .categories__portfolio ul li {
+    font-size: 2.5vw;
+    margin-right: 2vw;
+    padding: 1vw 2vw;
+  }
+
+  .portfolios {
+    margin-top: 20vw;
+  }
+
+  .portfolios .typography__portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item__portfolio .image__portfolio {
+    width: 80vw;
+    height: 80vw;
+    padding: 10vw 14.8vw;
+  }
+
+  .image__portfolio img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .portfolios .item__portfolio {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 5vw 25vw 5vw;
+  }
+
+  .item__portfolio .typography__portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    padding: 1vw 3vw 3vw 3vw;
+  }
+
+  .typography__title h3 {
+    font-size: 3.5vw;
+  }
+
+  .typography__title p {
+    font-size: 2.5vw;
+  }
+
+  .typography__portfolio .btn__portfolio {
+    margin-top: -8vw;
+  }
+
+  .btn__portfolio .cta span {
+    font-size: 2.5vw;
+  }
+
+  .btn__portfolio .cta svg {
+    width: 4vw;
   }
 }
