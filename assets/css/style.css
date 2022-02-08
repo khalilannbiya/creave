@@ -253,7 +253,8 @@ li > .nav-link:hover:before {
 .header__about h2,
 .header__ourteam h2,
 .header__ourportfolio h2,
-.header__ourservices h2 {
+.header__ourservices h2,
+.header__contact h2 {
   font-size: 3.2vw;
   font-weight: 800;
   color: var(--font-color-primary);
@@ -580,10 +581,6 @@ li > .nav-link:hover:before {
 #ourservices {
   margin-top: 30vw;
   padding-top: 20vw;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 .header__ourservices {
   display: flex;
@@ -635,6 +632,80 @@ li > .nav-link:hover:before {
   margin-top: -0.5vw;
   font-size: 1.5vw;
   font-weight: 600;
+}
+
+/* ========= Sectin Contact ========== */
+#contact {
+  padding-top: 15vw;
+}
+
+#contact .header__contact {
+  margin-left: 7.5vw;
+}
+
+.header__contact h2::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  margin-left: 2vw;
+  margin-top: 1.9vw;
+  position: absolute;
+  background-color: var(--aksen-kecil);
+}
+
+.header__contact p {
+  font-size: 1.3vw;
+  margin-top: 1vw;
+  color: var(--font-color-secondary);
+}
+
+#contact .ourcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10vw;
+}
+
+.ourcontact .list__contact {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  margin: 0 3vw 3vw 3vw;
+  padding: 1.4vw 2vw 1vw 2vw;
+  border-radius: 1vw;
+  transition: all 0.3s ease;
+}
+
+.list__contact a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5vw;
+  margin-right: 2vw;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--font-color-primary);
+  transition: all 0.3s ease;
+  margin: 0 3vw 5vw 3vw;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+}
+
+.list__contact a:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 32px 42px -14px rgba(0, 0, 0, 0.4);
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+}
+
+.list__contact i {
+  color: var(--font-color-primary);
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-right: 1vw;
 }
 
 /* ========= Ipad Device ========= */
@@ -738,7 +809,8 @@ li > .nav-link:hover:before {
   .header__about h2,
   .header__ourteam h2,
   .header__ourportfolio h2,
-  .header__ourservices h2 {
+  .header__ourservices h2,
+  .header__contact h2 {
     font-size: 5vw;
   }
 
@@ -913,6 +985,29 @@ li > .nav-link:hover:before {
   .inner__services i {
     font-size: 1.9vw;
   }
+
+  /* ======== Section Our Contact ======= */
+  #contact {
+    margin-top: 20vw;
+    padding-top: 20vw;
+  }
+
+  #contact .header__contact {
+    margin-left: 11vw;
+  }
+
+  .header__contact h2::after {
+    margin-top: 2.8vw;
+  }
+
+  .header__contact p {
+    font-size: 2vw;
+  }
+
+  .list__contact a,
+  .list__contact i {
+    font-size: 2vw;
+  }
 }
 
 /* ========= Tab Device ========= */
@@ -983,7 +1078,8 @@ li > .nav-link:hover:before {
   .header__about h2,
   .header__ourteam h2,
   .header__ourportfolio h2,
-  .header__ourservices h2 {
+  .header__ourservices h2,
+  .header__contact h2 {
     font-size: 6.5vw;
   }
 
@@ -1213,5 +1309,44 @@ li > .nav-link:hover:before {
   .inner__services i {
     margin-top: -1.5vw;
     font-size: 4vw;
+  }
+
+  /* ======= Section Contact ========== */
+  #contact {
+    margin-top: 112vw;
+    padding-top: 40vw;
+  }
+
+  .header__contact h2::after {
+    margin-top: 3.5vw;
+    width: 70px;
+  }
+
+  #contact .ourcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ourcontact .list__contact {
+    padding: 4vw 3vw;
+  }
+
+  .list__contact a {
+    margin: 0 3vw 3vw 3vw;
+    padding: 3.5vw 4.5vw;
+    border-radius: 2vw;
+  }
+
+  .list__contact a:hover {
+    padding: 3.5vw 4.5vw;
+    border-radius: 2vw;
+    box-shadow: 0px 15px 42px -14px rgba(0, 0, 0, 0.4);
+  }
+
+  .list__contact a,
+  .list__contact i {
+    font-size: 4.5vw;
   }
 }
