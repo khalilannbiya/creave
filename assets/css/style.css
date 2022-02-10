@@ -636,7 +636,7 @@ li > .nav-link:hover:before {
 
 /* ========= Sectin Contact ========== */
 #contact {
-  padding-top: 15vw;
+  padding-top: 13vw;
 }
 
 #contact .header__contact {
@@ -706,6 +706,163 @@ li > .nav-link:hover:before {
   font-size: 1.5vw;
   font-weight: 600;
   margin-right: 1vw;
+}
+
+/* =========== Section Footer =========== */
+.footer .main__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20vw;
+  margin: 0 7.5vw;
+  padding: 5vw 0;
+  color: var(--font-color-primary);
+}
+
+.main__footer .list__footer {
+  margin-right: 0;
+  width: 100%;
+  height: 45vh;
+}
+
+.main__footer .footer__ourservices,
+.main__footer .footer__social {
+  margin-left: 0;
+}
+
+.list__footer h4 {
+  font-size: 1.9vw;
+  font-weight: 700;
+}
+
+.main__footer .footer__logo {
+  width: 110%;
+  /* margin-top: -0.9vw; */
+}
+
+.creave__logo__footer img {
+  width: 7vw;
+  height: 1.3vw;
+}
+
+.creave__id .typography__logo__footer {
+  margin-top: 2vw;
+  line-height: 1.3vw;
+}
+
+.typography__logo__footer p {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.footer__logo .creave__call {
+  margin-top: 3vw;
+}
+
+.creave__call p {
+  line-height: 1vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.footer__links ul,
+.footer__services ul {
+  list-style: none;
+  margin-top: 1.5vw;
+}
+
+.footer__links ul li,
+.footer__services ul li {
+  margin-left: -3vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer__links ul li a,
+.footer__services ul li a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  font-weight: 500;
+  font-size: 1vw;
+  transition: all 0.3s ease;
+}
+
+.footer__links ul li a:hover,
+.footer__services ul li a:hover {
+  color: var(--aksen-kecil);
+}
+
+.footer__links ul li a i,
+.footer__services ul li a i {
+  margin-right: 1vw;
+  color: var(--aksen-kecil);
+}
+
+.main__footer .footer__social {
+  margin-right: 0;
+}
+
+.footer__social p {
+  margin-top: 2vw;
+  font-size: 1vw;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.footer__social .list__social {
+  display: flex;
+  align-items: center;
+}
+
+.list__social .inner__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  margin-right: 1vw;
+  margin-top: 0.5vw;
+  transition: all 0.5s ease;
+}
+
+.list__social .inner__social:hover {
+  background-color: var(--primary-color);
+}
+
+.inner__social a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.inner__social a:hover {
+  color: var(--tertiary-color);
+}
+
+.social__linkedin i {
+  font-weight: 500;
+}
+
+.bottom__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom__footer p {
+  font-size: 1.1vw;
+  color: var(--font-color-primary);
+  font-weight: 400;
+}
+
+.bottom__footer span {
+  font-weight: 600;
 }
 
 /* ========= Ipad Device ========= */
@@ -1007,6 +1164,100 @@ li > .nav-link:hover:before {
   .list__contact a,
   .list__contact i {
     font-size: 2vw;
+  }
+
+  /* ======== Section Footer ========= */
+  .footer {
+    margin-top: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 0;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer .main__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .main__footer .list__footer {
+    height: 30vh;
+    width: 30%;
+    margin-right: 2vw;
+    margin-bottom: 0;
+  }
+
+  .main__footer .footer__social {
+    width: 50%;
+  }
+
+  .main__footer .footer__logo {
+    margin-right: 4.2vw;
+  }
+
+  .creave__id img {
+    width: 11vw;
+    height: 1.7vw;
+  }
+
+  .creave__id .typography__logo__footer {
+    margin-top: 2.8vw;
+  }
+
+  .typography__logo__footer p {
+    font-size: 1.6vw;
+  }
+  .creave__call p {
+    font-size: 1.4vw;
+    line-height: 0.5vw;
+  }
+
+  .list__footer h4 {
+    font-size: 2.8vw;
+  }
+
+  .footer__links ul li,
+  .footer__services ul li {
+    margin-left: -4.2vw;
+  }
+
+  .footer__links ul li a,
+  .footer__services ul li a {
+    font-size: 1.5vw;
+  }
+
+  .footer__links ul li a i,
+  .footer__services ul li a i {
+    font-size: 1.5vw;
+  }
+
+  .footer__social p {
+    font-size: 1.5vw;
+  }
+
+  .list__social .inner__social {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .inner__social i {
+    font-size: 2vw;
+  }
+
+  .bottom__footer {
+    padding: 0.5vw 0;
+  }
+
+  .bottom__footer p {
+    font-size: 1.6vw;
   }
 }
 
@@ -1348,5 +1599,106 @@ li > .nav-link:hover:before {
   .list__contact a,
   .list__contact i {
     font-size: 4.5vw;
+  }
+
+  /* ======== Section Footer ======= */
+  .footer {
+    padding-top: 40vw;
+    display: flex;
+    margin-right: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .main__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__footer .list__footer {
+    width: 100%;
+    margin-bottom: 0;
+    margin: 0;
+  }
+
+  .creave__id img {
+    width: 27vw;
+    height: 4vw;
+  }
+
+  .footer__logo .typography__logo__footer {
+    margin-top: 7vw;
+    line-height: 2vw;
+  }
+
+  .typography__logo__footer p {
+    font-size: 3.5vw;
+  }
+
+  .footer__logo .creave__call {
+    margin-top: 7vw;
+  }
+
+  .creave__call p {
+    font-size: 3.5vw;
+    line-height: 2vw;
+  }
+
+  .main__footer .footer__links {
+    margin-top: -8vw;
+  }
+
+  .main__footer .footer__social {
+    margin-top: -6vw;
+  }
+
+  .list__footer h4 {
+    font-size: 6.5vw;
+  }
+
+  .footer__links ul,
+  .footer__services ul {
+    margin-top: 3vw;
+  }
+
+  .footer__links ul li,
+  .footer__services ul li {
+    margin-left: -6vw;
+  }
+
+  .footer__links ul li a,
+  .footer__services ul li a {
+    font-size: 3.5vw;
+  }
+
+  .footer__links ul li a i,
+  .footer__services ul li a i {
+    font-size: 3.5vw;
+  }
+
+  .footer .footer__social p {
+    margin-top: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .list__social .inner__social {
+    margin-top: 3vw;
+    width: 8vw;
+    height: 8vw;
+    margin-right: 3vw;
+  }
+
+  .inner__social i {
+    font-size: 4vw;
+  }
+
+  .bottom__footer {
+    padding: 0.5vw 0;
+  }
+
+  .bottom__footer p {
+    font-size: 3.5vw;
   }
 }
