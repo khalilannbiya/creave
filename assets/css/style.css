@@ -974,7 +974,7 @@ li>.nav-link:hover:before {
 
   #about {
     height: auto;
-    padding-top: 8vw;
+    padding-top: 10vw;
   }
 
   .header__about h2,
@@ -1101,7 +1101,7 @@ li>.nav-link:hover:before {
   .portfolios .item__portfolio {
     width: 36vw;
     height: 30vw;
-    margin: 0 5vw 7vw 5vw;
+    margin: 7vw 5vw 0 5vw;
   }
 
   .item__portfolio .image__portfolio {
@@ -1142,6 +1142,7 @@ li>.nav-link:hover:before {
   /* ========= Our Services ========= */
   #ourservices {
     height: auto;
+    padding-top: 10vw;
   }
 
   .header__ourservices p {
@@ -1166,7 +1167,7 @@ li>.nav-link:hover:before {
 
   /* ======== Section Our Contact ======= */
   #contact {
-    padding-top: 12vw;
+    padding-top: 10vw;
   }
 
   #contact .header__contact {
@@ -1188,7 +1189,6 @@ li>.nav-link:hover:before {
 
   /* ======== Section Footer ========= */
   .footer {
-    margin-top: 5vw;
     padding-top: 10vw;
     padding-bottom: 0;
     margin-left: 3vw;
@@ -1287,6 +1287,7 @@ li>.nav-link:hover:before {
 
 /* ========= Mobile Device ========= */
 @media only screen and (max-width: 576px) {
+
   .navbar {
     height: auto;
   }
@@ -1342,7 +1343,7 @@ li>.nav-link:hover:before {
 
   /* ========= Section About ========= */
   #about {
-    padding-top: 16vw;
+    padding-top: 15vw;
     height: auto;
   }
 
@@ -1432,7 +1433,7 @@ li>.nav-link:hover:before {
 
   /* ========= Section Ourteam ========= */
   #ourteam {
-    padding-top: 16vw;
+    padding-top: 15vw;
     height: auto;
   }
 
@@ -1470,7 +1471,7 @@ li>.nav-link:hover:before {
     justify-content: center;
     align-items: center;
     /* margin-top: 50vw; */
-    padding-top: 20vw;
+    padding-top: 15vw;
     height: auto;
   }
 
@@ -1489,7 +1490,7 @@ li>.nav-link:hover:before {
   }
 
   .portfolios {
-    margin-top: 20vw;
+    margin-top: 5vw;
   }
 
   .portfolios .typography__portfolio {
@@ -1513,7 +1514,7 @@ li>.nav-link:hover:before {
   .portfolios .item__portfolio {
     width: 80vw;
     height: 80vw;
-    margin: 0 5vw 25vw 5vw;
+    margin: 15vw 5vw 0 5vw;
   }
 
   .item__portfolio .typography__portfolio {
@@ -1623,7 +1624,8 @@ li>.nav-link:hover:before {
 
   /* ======== Section Footer ======= */
   .footer {
-    padding-top: 40vw;
+    padding-top: 15vw;
+    margin-top: 0;
     display: flex;
     margin-right: 5vw;
     justify-content: center;
