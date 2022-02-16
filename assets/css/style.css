@@ -147,17 +147,17 @@ body {
    display: none;
 }
 
-li > .nav-link {
+li>.nav-link {
    position: relative;
    color: #ff8e00;
    text-decoration: none;
 }
 
-li > .nav-link:hover {
+li>.nav-link:hover {
    color: #ff8e00;
 }
 
-li > .nav-link:before {
+li>.nav-link:before {
    content: "";
    position: absolute;
    width: 50%;
@@ -172,7 +172,7 @@ li > .nav-link:before {
    transition: all 0.3s ease-in-out 0s;
 }
 
-li > .nav-link:hover:before {
+li>.nav-link:hover:before {
    padding-bottom: 5px;
    visibility: visible;
    -webkit-transform: scaleX(1);
@@ -487,7 +487,7 @@ li > .nav-link:hover:before {
    padding-bottom: 1vw;
    margin: 0 2vw 5vw 2vw;
    background-color: var(--primary-color);
-   transition: all 0.3s ease;
+   transition: all 0.3s ease !important;
 }
 
 .portfolios .item__portfolio.hide {
@@ -631,7 +631,7 @@ li > .nav-link:hover:before {
    margin: 0 3vw 5vw 3vw;
    padding: 1.4vw 2vw 1vw 2vw;
    border-radius: 1vw;
-   transition: all 0.3s ease;
+   transition: all 0.3s ease !important;
 }
 
 .list__ourservices .inner__services:hover {
@@ -707,7 +707,7 @@ li > .nav-link:hover:before {
    font-weight: 600;
    text-decoration: none;
    color: var(--font-color-primary);
-   transition: all 0.3s ease;
+   transition: all 0.3s ease !important;
    margin: 0 3vw 5vw 3vw;
    padding: 1vw 2vw;
    border-radius: 1vw;
@@ -804,7 +804,7 @@ li > .nav-link:hover:before {
    color: var(--font-color-primary);
    font-weight: 500;
    font-size: 1vw;
-   transition: all 0.3s ease;
+   transition: all 0.3s ease !important;
 }
 
 .footer__links ul li a:hover,
@@ -844,7 +844,7 @@ li > .nav-link:hover:before {
    border-radius: 50%;
    margin-right: 1vw;
    margin-top: 0.5vw;
-   transition: all 0.5s ease;
+   transition: all 0.5s ease !important;
 }
 
 .list__social .inner__social:hover {
@@ -1287,8 +1287,7 @@ li > .nav-link:hover:before {
 }
 
 /* ========= Tab Device ========= */
-@media only screen and (max-width: 768px) {
-}
+@media only screen and (max-width: 768px) {}
 
 /* ========= Mobile Device ========= */
 @media only screen and (max-width: 576px) {
