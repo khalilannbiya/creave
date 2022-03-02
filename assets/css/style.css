@@ -177,8 +177,26 @@ li > .nav-link:before {
 li > .nav-link:hover:before {
   padding-bottom: 5px;
   visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  -webkit-transform: scaleX(0.8);
+  transform: scaleX(0.8);
+}
+
+li > .nav-link.active {
+  color: #ff8e00;
+}
+
+li > .nav-link.active:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 26%;
+  border-bottom: 3px solid #ff8e00;
+  padding-bottom: 5px;
+  visibility: visible;
+  -webkit-transform: scaleX(0.8);
+  transform: scaleX(0.8);
 }
 
 .button-contact .btn {
