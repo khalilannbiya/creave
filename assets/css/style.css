@@ -129,6 +129,7 @@ body {
 
 .container-fluid .navbar-collapse {
   flex-grow: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar-brand img {
@@ -648,7 +649,8 @@ li > .nav-link:hover:before {
   margin: 0 3vw 5vw 3vw;
   padding: 1.4vw 2vw 1vw 2vw;
   border-radius: 1vw;
-  transition: all 0.3s ease !important;
+  transition: all 0.4s ease-in-out !important;
+  cursor: pointer;
 }
 
 .list__ourservices .inner__services:hover {
@@ -712,7 +714,7 @@ li > .nav-link:hover:before {
   margin: 0 3vw 3vw 3vw;
   padding: 1.4vw 2vw 1vw 2vw;
   border-radius: 1vw;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
 }
 
 .list__contact a {
@@ -724,7 +726,7 @@ li > .nav-link:hover:before {
   font-weight: 600;
   text-decoration: none;
   color: var(--font-color-primary);
-  transition: all 0.3s ease !important;
+  transition: all 0.4s ease-in-out !important;
   margin: 0 3vw 5vw 3vw;
   padding: 1vw 2vw;
   border-radius: 1vw;
